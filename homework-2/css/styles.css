@@ -167,6 +167,18 @@ p {
 /* title */
 .hero-container {
   padding: 120px 0px;
+  background-image: url(/images/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.hero-content {
+  max-width: 529px;
+  height: 408px;
+  margin-left: 106px;
+}
+.hero-button-block {
+  max-width: 238px;
+  height: 103px;
 }
 .hero-title {
   width: 100%;
@@ -214,8 +226,23 @@ p {
   max-width: 710px;
 }
 .about-us-images {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 170px 100px 100px 130px;
+  grid-template-rows: 348px 348px;
+  gap: 40px 0px;
+}
+.item-image-a {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  border-radius: 163px;
+}
+.item-image-b {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 163px;
+}
+.item-image {
+  border-radius: 163px;
 }
 .section-title-about-us {
   padding-top: 40px;
