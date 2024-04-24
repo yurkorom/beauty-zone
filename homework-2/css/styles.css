@@ -167,7 +167,7 @@ p {
 /* title */
 .hero-container {
   padding: 120px 0px;
-  background-image: url(/images/main-banner.jpg);
+  background-image: url('../images/main-banner.jpg');
   background-repeat: no-repeat;
   background-position: right top;
 }
