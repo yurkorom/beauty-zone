@@ -352,7 +352,7 @@ header {
 
 /* advantages section*/
 .backgraund {
-  background-image: url('/images/background-section.jpg');
+  background-image: url('../images/background-section.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
