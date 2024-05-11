@@ -89,6 +89,15 @@ a {
   padding: 0px 24px;
 }
 
+.visualy-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* header */
 header {
   position: absolute;
@@ -328,12 +337,14 @@ header {
 /* form */
 .form-title {
   margin-bottom: 32px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 22px;
+  width: 280px;
   text-align: center;
 }
 
 .form-section {
-  padding: 48px;
+  padding: 48px 56px;
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   border-radius: 32px;
@@ -348,6 +359,13 @@ header {
   font-size: 12px;
   line-height: 1.5;
   text-align: center;
+  max-width: 210px;
+  margin: 0 auto;
+}
+
+.privacy-policy-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 /* advantages section*/
@@ -616,6 +634,7 @@ header {
   justify-content: center;
   padding: 42px 144px;
   background-color: var(--color-primary-dark);
+  overflow-y: auto;
 }
 
 .modal-btn-close {
@@ -640,4 +659,43 @@ header {
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-form-title {
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+/* form */
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-field-contact {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 18px 33px;
+  width: 100%;
+  font-size: 13px;
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-secondary-light);
+  border-radius: 32px;
+  background-color: transparent;
+  outline: none;
+}
+
+.form-input:focus {
+  background-color: var(--color-secondary-light);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-primary-light);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
 }

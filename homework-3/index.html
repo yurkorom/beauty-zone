@@ -210,13 +210,53 @@
                     Запишіться <span class="accent">безкоштовно</span> та
                     отримайте подарунок
                   </h3>
-                  <button class="button form-button">
-                    Записатись безкоштовно
-                  </button>
-                  <p class="privacy-policy">
-                    Натискаючи на кнопку я погоджуюсь
-                    <a href="#">з політикою конфіденційності</a>
-                  </p>
+                  <form name="contact-form" autocomplete="off">
+                    <div class="form-field-contact">
+                      <label class="form-label visualy-hidden" for="user-name"
+                        >Ваше ім'я та прізвище</label
+                      >
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="user-name"
+                        name="user-name"
+                        placeholder="Ваше ім'я та прізвище"
+                      />
+                    </div>
+                    <div class="form-field-contact">
+                      <label class="form-label visualy-hidden" for="user-tel"
+                        >Ваш номер телефону</label
+                      >
+                      <input
+                        class="form-input"
+                        type="tel"
+                        id="user-tel"
+                        name="user-tel"
+                        placeholder="Ваш номер телефону"
+                      />
+                    </div>
+                    <div class="form-field-contact">
+                      <label class="form-label visualy-hidden" for="user-email"
+                        >Ваша електронна пошта</label
+                      >
+                      <input
+                        class="form-input"
+                        type="email"
+                        id="user-email"
+                        name="user-email"
+                        placeholder="Ваша електронна пошта"
+                      />
+                    </div>
+                    <button class="button form-button" type="submit">
+                      Записатись безкоштовно
+                    </button>
+                    <p class="privacy-policy">
+                      Натискаючи на кнопку я погоджуюсь
+                      <a class="privacy-policy-link" href="#"
+                        >з політикою конфіденційності</a
+                      >
+                    </p>
+                  </form>
                 </article>
               </li>
             </ul>
@@ -323,11 +363,53 @@
               Запишіться <span class="accent">безкоштовно</span> та отримайте
               подарунок
             </h3>
-            <button class="button form-button">Записатись безкоштовно</button>
-            <p class="privacy-policy">
-              Натискаючи на кнопку я погоджуюсь
-              <a href="#">з політикою конфіденційності</a>
-            </p>
+            <form name="modal-form" autocomplete="off" novalidate>
+              <div class="form-field">
+                <label class="form-label visualy-hidden" for="user-name"
+                  >Ваше ім'я та прізвище</label
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label visualy-hidden" for="user-tel"
+                  >Ваш номер телефону</label
+                >
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="user-tel"
+                  name="user-tel"
+                  placeholder="Ваш номер телефону"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label visualy-hidden" for="user-email"
+                  >Ваша електронна пошта</label
+                >
+                <input
+                  class="form-input"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Ваша електронна пошта"
+                />
+              </div>
+              <button class="button form-button" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="privacy-policy">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="privacy-policy-link" href="#"
+                  >з політикою конфіденційності</a
+                >
+              </p>
+            </form>
           </div>
         </article>
       </div>
