@@ -342,7 +342,7 @@ header {
   animation-name: shine-star-l;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 
 @keyframes shine-star-l {
@@ -382,7 +382,7 @@ header {
   animation-delay: 1.25s;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 
 @keyframes shine-star-m {
@@ -422,7 +422,7 @@ header {
   animation-delay: 2.5s;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
 }
 
 @keyframes shine-star-s {
