@@ -84,7 +84,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1290px;
   margin: 0 auto;
   padding: 0px 24px;
 }
@@ -135,7 +135,7 @@ header {
 
 .address-icon {
   fill: var(--color-primary-dark);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .address-icon:hover {
@@ -161,7 +161,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  transition: color 0.3s, background-color 0.3s;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -188,7 +188,7 @@ header {
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .link:hover {
@@ -224,7 +224,7 @@ header {
 }
 
 /* title */
-.hero {
+.section-hero {
   background-image: linear-gradient(
       94deg,
       rgba(255, 255, 255, 1) 30.5%,
@@ -234,8 +234,8 @@ header {
     ),
     url(../images/main.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  /* background-size: cover; */
 }
 
 .hero-container {
@@ -279,8 +279,7 @@ header {
 
 /* about us section*/
 .section-about {
-  padding-top: 0;
-  margin-bottom: 80px;
+  padding: 0;
 }
 
 .text-about-us {
@@ -289,6 +288,7 @@ header {
 }
 
 .about-us-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -305,7 +305,7 @@ header {
 .about-us-images {
   display: grid;
   grid-template-columns: 170px 100px 100px 130px;
-  grid-template-rows: 348px 348px;
+  grid-template-rows: 328px 328px;
   gap: 40px 0px;
 }
 
@@ -332,6 +332,124 @@ header {
   font-weight: 700;
   font-size: 64px;
   text-align: left;
+}
+
+.star-l {
+  position: absolute;
+  top: 323px;
+  right: 250px;
+  fill: var(--color-secondary-dark);
+  animation-name: shine-star-l;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes shine-star-l {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-secondary-dark);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-dark);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-dark);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-dark);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-dark);
+  }
+}
+
+.star-m {
+  position: absolute;
+  top: 19px;
+  right: -41px;
+  transform: rotate(60deg);
+  fill: var(--color-primary-blue);
+  animation-name: shine-star-m;
+  animation-delay: 1.25s;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes shine-star-m {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-primary-blue);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-blue);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-blue);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-primary-blue);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-primary-blue);
+  }
+}
+
+.star-s {
+  position: absolute;
+  top: 257px;
+  right: -42px;
+  transform: rotate(7deg);
+  fill: var(--color-secondary-light);
+  animation-name: shine-star-s;
+  animation-delay: 2.5s;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes shine-star-s {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-secondary-light);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-light);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-light);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-light);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-light);
+  }
 }
 
 /* form */
@@ -369,23 +487,25 @@ header {
 }
 
 /* advantages section*/
-.backgraund {
+.background {
   background-image: url('../images/background-section.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center top;
+  width: 100%;
+}
+
+.section.advantages {
+  padding-top: 176px;
 }
 
 .advantages-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
 }
 
 .advantages-card {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: row;
   gap: 56px;
   margin: 0;
@@ -403,10 +523,18 @@ header {
   box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
 }
 
+.advantages p:last-child {
+  margin-bottom: 0px;
+}
+
 .advantages-icons {
   fill: var(--color-primary-blue);
   margin-top: 5px;
   margin-bottom: 8px;
+}
+
+.advantages-item {
+  display: flex;
 }
 
 /* procedures section*/
@@ -438,7 +566,7 @@ header {
   flex-basis: calc((100% - 32px) / 3);
   height: 456px;
   border-radius: 4px 120px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
 }
 
 .procedures-item:hover {
@@ -489,6 +617,7 @@ header {
   border-radius: 50%;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+  transition: background-color 0.2s, fill 0.2s, border 0.2s;
 }
 
 .carusel-button.next {
@@ -529,17 +658,17 @@ header {
 
 /* footer */
 .footer-section {
-  position: relative;
   padding: 56px 0px;
+  height: 278px;
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
   font-size: 16px;
 }
 
-.footer-section::after {
+.footer-container::after {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 67px;
+  right: 5px;
   width: 250px;
   height: 155px;
   content: '';
@@ -547,6 +676,7 @@ header {
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   gap: 20px;
 }
@@ -580,7 +710,7 @@ header {
 .footer-link {
   color: var(--color-primary-light);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 .footer-link:hover {
@@ -589,7 +719,7 @@ header {
 
 .address-icon-footer {
   fill: var(--color-primary-light);
-  transition: fill 0.3s;
+  transition: fill 0.2s;
 }
 
 .address-icon-footer:hover {
@@ -613,7 +743,7 @@ header {
   align-content: center;
   justify-content: center;
   background-color: rgba(1, 31, 74, 0.4%);
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .backdrop.is-hidden {
@@ -684,6 +814,7 @@ header {
   border-radius: 32px;
   background-color: transparent;
   outline: none;
+  transition: background-color 0.2s;
 }
 
 .form-input:focus {

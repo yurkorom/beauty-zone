@@ -44,7 +44,7 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="section-hero">
         <div class="container">
           <div class="hero-backgraund">
             <div class="hero-container">
@@ -68,41 +68,52 @@
           </div>
         </div>
       </section>
-      <div class="backgraund">
-        <section class="section section-about" id="about-us-section">
-          <div class="container">
-            <div class="about-us-container">
-              <div class="about-us-content">
-                <h2 class="section-title-about-us">
-                  Перевтілюйтесь в
-                  <span class="accent-brand">beauty zone!</span>
-                </h2>
-                <p class="text-about-us">
-                  Наша косметологічна клініка пропонує вам професійні послуги з
-                  догляду за шкірою обличчя та тіла.
-                </p>
-                <p class="text-about-us">
-                  B <span class="accent-dark">beauty zone</span> ми гарантуємо
-                  найвищі стандарти якості та приємний сервіс. Наші
-                  косметологічні процедури та препарати допоможуть вам
-                  підтримувати свою красу та молодість. З нами краса назавжди!
-                </p>
-              </div>
-              <div class="about-us-images">
-                <img
-                  class="item-image-a"
-                  src="./images/face-1.jpg"
-                  alt="жінка зі стрілкою на щоці"
-                />
-                <img
-                  class="item-image-b"
-                  src="./images/face-2.jpg"
-                  alt="жінка зі стрилкою на шії"
-                />
-              </div>
+      <section class="section section-about" id="about-us-section">
+        <div class="container">
+          <div class="about-us-container">
+            <div class="about-us-content">
+              <h2 class="section-title-about-us">
+                Перевтілюйтесь в
+                <span class="accent-brand">beauty zone!</span>
+              </h2>
+              <p class="text-about-us">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p class="text-about-us">
+                B <span class="accent-dark">beauty zone</span> ми гарантуємо
+                найвищі стандарти якості та приємний сервіс. Наші косметологічні
+                процедури та препарати допоможуть вам підтримувати свою красу та
+                молодість. З нами краса назавжди!
+              </p>
+            </div>
+            <div class="about-us-images">
+              <img
+                class="item-image-a"
+                src="./images/face-1.jpg"
+                alt="жінка зі стрілкою на щоці"
+              />
+              <img
+                class="item-image-b"
+                src="./images/face-2.jpg"
+                alt="жінка зі стрилкою на шії"
+              />
+            </div>
+            <div class="about-us-star">
+              <svg class="star-l" width="64" height="64">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="star-m" width="40" height="40">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
+              <svg class="star-s" width="16" height="16">
+                <use href="./images/icons.svg#icon-star"></use>
+              </svg>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <div class="background">
         <section class="section advantages" id="advantages-section">
           <div class="container">
             <div class="advantages-container">
@@ -110,7 +121,7 @@
                 Чому люди <span class="accent"><br />обирають нас</span>
               </h2>
               <ul class="advantages-card">
-                <li>
+                <li class="advantages-item">
                   <div class="advantages-text">
                     <svg class="advantages-icons" width="48" height="48">
                       <use href="./images/icons.svg#icon-materials"></use>
@@ -121,7 +132,7 @@
                     </p>
                   </div>
                 </li>
-                <li>
+                <li class="advantages-item">
                   <div class="advantages-text">
                     <svg class="advantages-icons" width="48" height="48">
                       <use
@@ -134,7 +145,7 @@
                     </p>
                   </div>
                 </li>
-                <li>
+                <li class="advantages-item">
                   <div class="advantages-text">
                     <svg class="advantages-icons" width="48" height="48">
                       <use href="./images/icons.svg#icon-crown"></use>
@@ -221,6 +232,8 @@
                         id="user-name"
                         name="user-name"
                         placeholder="Ваше ім'я та прізвище"
+                        required
+                        pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                       />
                     </div>
                     <div class="form-field-contact">
@@ -233,6 +246,8 @@
                         id="user-tel"
                         name="user-tel"
                         placeholder="Ваш номер телефону"
+                        required
+                        pattern="^\+380[0-9]{9}"
                       />
                     </div>
                     <div class="form-field-contact">
@@ -245,6 +260,7 @@
                         id="user-email"
                         name="user-email"
                         placeholder="Ваша електронна пошта"
+                        required
                       />
                     </div>
                     <button class="button form-button" type="submit">
@@ -363,7 +379,7 @@
               Запишіться <span class="accent">безкоштовно</span> та отримайте
               подарунок
             </h3>
-            <form name="modal-form" autocomplete="off" novalidate>
+            <form name="modal-form" autocomplete="off">
               <div class="form-field">
                 <label class="form-label visualy-hidden" for="user-name"
                   >Ваше ім'я та прізвище</label
@@ -374,6 +390,8 @@
                   id="user-name"
                   name="user-name"
                   placeholder="Ваше ім'я та прізвище"
+                  required
+                  pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                 />
               </div>
               <div class="form-field">
@@ -386,6 +404,8 @@
                   id="user-tel"
                   name="user-tel"
                   placeholder="Ваш номер телефону"
+                  required
+                  pattern="^\+380[0-9]{9}"
                 />
               </div>
               <div class="form-field">
@@ -398,6 +418,7 @@
                   id="user-email"
                   name="user-email"
                   placeholder="Ваша електронна пошта"
+                  required
                 />
               </div>
               <button class="button form-button" type="submit">
