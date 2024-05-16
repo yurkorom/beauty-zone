@@ -661,6 +661,7 @@ header {
   padding: 56px 0px;
   height: 278px;
   color: var(--color-primary-light);
+  background-image: url('../images/background-footer.png');
   background-color: var(--color-primary-dark);
   font-size: 16px;
 }
