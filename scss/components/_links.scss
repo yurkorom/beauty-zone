@@ -1,0 +1,16 @@
+.link {
+  color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary-blue);
+}
+
+.social-link {
+  text-decoration: none;
+}
