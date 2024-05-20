@@ -1,0 +1,173 @@
+.section-about {
+  padding: 0;
+}
+
+.text-about-us {
+  margin-bottom: 0px;
+  line-height: 1.7;
+}
+
+.about-us-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 710px;
+}
+
+.about-us-images {
+  display: grid;
+  grid-template-columns: 170px 100px 100px 130px;
+  grid-template-rows: 328px 328px;
+  gap: 40px 0px;
+}
+
+.item-image-a {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  border-radius: 163px;
+}
+
+.item-image-b {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-radius: 163px;
+}
+
+.item-image {
+  border-radius: 163px;
+}
+
+.section-title-about-us {
+  padding-top: 40px;
+  margin-bottom: 0px;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: left;
+}
+
+.star-l {
+  position: absolute;
+  top: 323px;
+  right: 250px;
+  fill: var(--color-secondary-dark);
+  animation-name: shine-star-l;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine-star-l {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-secondary-dark);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-dark);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-dark);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-dark);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-dark);
+  }
+}
+
+.star-m {
+  position: absolute;
+  top: 19px;
+  right: -41px;
+  transform: rotate(60deg);
+  fill: var(--color-primary-blue);
+  animation-name: shine-star-m;
+  animation-delay: 1.25s;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine-star-m {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-primary-blue);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-blue);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-primary-blue);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-primary-blue);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-primary-blue);
+  }
+}
+
+.star-s {
+  position: absolute;
+  top: 257px;
+  right: -42px;
+  transform: rotate(7deg);
+  fill: var(--color-secondary-light);
+  animation-name: shine-star-s;
+  animation-delay: 2.5s;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine-star-s {
+  0% {
+    transform: scale(0) rotate(0);
+    fill: var(--color-secondary-light);
+  }
+  15% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-light);
+  }
+  30% {
+    transform: scale(1.5) rotate(30deg);
+    fill: var(--color-primary-light);
+  }
+  50% {
+    transform: scale(0.4) rotate(10deg);
+    fill: var(--color-secondary-light);
+  }
+  75% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-light);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    fill: var(--color-secondary-light);
+  }
+}
