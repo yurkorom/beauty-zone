@@ -5,16 +5,19 @@
 
 @import './base/base';
 
+@import './components/accent';
 @import './components/buttons';
 @import './components/carousel';
-@import './components/forms';
 @import './components/links';
-@import './components/modal';
 
 @import './layout/about-us-section';
 @import './layout/advantages-section';
 @import './layout/contacts-section';
+@import './layout/container';
 @import './layout/footer';
+@import './lauout/forms';
 @import './layout/header';
 @import './layout/hero-section';
+@import './layout/modal';
 @import './layout/procedures-section';
+@import './layout/section';
