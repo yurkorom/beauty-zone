@@ -1,0 +1,39 @@
+.procedure-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 456px;
+    width: 344px;
+    border-radius: 4px 120px;
+
+    &--masks {
+        background-image: linear-gradient(180deg,
+                rgba(1, 28, 68, 0) 48.529%,
+                rgba(1, 28, 68, 0.73) 84.641%,
+                rgb(1, 28, 68) 101.43%), url('../images/face-masks.jpg');
+    }
+
+    &--injection {
+        background-image: linear-gradient(180deg,
+                rgba(1, 28, 68, 0) 48.529%,
+                rgba(1, 28, 68, 0.73) 84.641%,
+                rgb(1, 28, 68) 101.43%), url('../images/facial-injections.jpg');
+    }
+
+    &--cleansing {
+        background-image: linear-gradient(180deg,
+                rgba(1, 28, 68, 0) 48.529%,
+                rgba(1, 28, 68, 0.73) 84.641%,
+                rgb(1, 28, 68) 101.43%), url('../images/facial-cleansing.jpg');
+    }
+
+    &__title {
+        width: 152px;
+        font-weight: 400;
+        font-size: 22px;
+        color: var(--color-primary-light);
+        line-height: 1.18;
+        text-align: center;
+    }
+}

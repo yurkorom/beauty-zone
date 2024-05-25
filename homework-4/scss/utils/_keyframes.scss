@@ -1,0 +1,95 @@
+@keyframes shine-star-l {
+    0% {
+        transform: scale(0) rotate(0);
+        fill: var(--color-secondary-dark);
+    }
+
+    15% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-secondary-dark);
+    }
+
+    30% {
+        transform: scale(1.5) rotate(30deg);
+        fill: var(--color-primary-light);
+    }
+
+    50% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-primary-dark);
+    }
+
+    75% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-secondary-dark);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-secondary-dark);
+    }
+}
+
+@keyframes shine-star-m {
+    0% {
+        transform: scale(0) rotate(0);
+        fill: var(--color-primary-blue);
+    }
+
+    15% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-primary-blue);
+    }
+
+    30% {
+        transform: scale(1.5) rotate(30deg);
+        fill: var(--color-primary-light);
+    }
+
+    50% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-primary-blue);
+    }
+
+    75% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-primary-blue);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-primary-blue);
+    }
+}
+
+@keyframes shine-star-s {
+    0% {
+        transform: scale(0) rotate(0);
+        fill: var(--color-secondary-light);
+    }
+
+    15% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-secondary-light);
+    }
+
+    30% {
+        transform: scale(1.5) rotate(30deg);
+        fill: var(--color-primary-light);
+    }
+
+    50% {
+        transform: scale(0.4) rotate(10deg);
+        fill: var(--color-secondary-light);
+    }
+
+    75% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-secondary-light);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        fill: var(--color-secondary-light);
+    }
+}

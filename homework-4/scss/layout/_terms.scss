@@ -1,0 +1,14 @@
+.terms {
+    margin-bottom: 0px;
+    color: var(--color-secondary-light);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 210px;
+    margin: 0 auto;
+
+    &--link {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}

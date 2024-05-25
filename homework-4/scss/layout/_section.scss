@@ -1,11 +1,11 @@
 .section {
   padding: 48px 0px;
-}
 
-.section-title {
-  margin-bottom: 48px;
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  text-align: center;
+  &__title {
+    margin-bottom: 48px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+  }
 }

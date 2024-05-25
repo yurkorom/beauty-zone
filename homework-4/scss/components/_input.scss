@@ -1,0 +1,28 @@
+.input {
+    position: relative;
+
+    &__label {
+        display: block;
+    }
+
+    &__control {
+        padding: 18px 33px;
+        width: 100%;
+        font-size: 13px;
+        color: var(--color-primary-light);
+        border: 2px solid var(--color-secondary-light);
+        border-radius: 32px;
+        background-color: transparent;
+        outline: none;
+        transition: background-color 0.2s;
+
+        &:focus {
+            background-color: var(--color-secondary-light);
+            outline: none;
+        }
+
+        &::placeholder {
+            color: var(--color-primary-light);
+        }
+    }
+}

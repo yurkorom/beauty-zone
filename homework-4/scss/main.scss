@@ -1,23 +1,29 @@
 @import './utils/fonts';
+@import './utils/keyframes';
 @import './utils/mixins';
+@import './utils/texts';
 @import './utils/utils';
 @import './utils/variables';
 
 @import './base/base';
 
-@import './components/accent';
 @import './components/buttons';
 @import './components/carousel';
+@import './components/input';
 @import './components/links';
+@import './components/procedures';
+@import './components/stars';
 
 @import './layout/about-us-section';
+@import './layout/advantage-cards';
 @import './layout/advantages-section';
+@import './layout/background';
 @import './layout/contacts-section';
 @import './layout/container';
 @import './layout/footer';
-@import './lauout/forms';
 @import './layout/header';
 @import './layout/hero-section';
 @import './layout/modal';
 @import './layout/procedures-section';
 @import './layout/section';
+@import './layout/terms';

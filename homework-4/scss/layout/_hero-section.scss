@@ -1,44 +1,43 @@
-.section-hero {
-  background-image: linear-gradient(
-      94deg,
+.hero-section {
+  background-image: linear-gradient(94deg,
       rgba(255, 255, 255, 1) 30.5%,
       rgba(255, 255, 255, 0.85) 41.2%,
       rgba(255, 255, 255, 0.19) 58.5%,
-      rgba(255, 255, 255, 0) 72.6%
-    ),
+      rgba(255, 255, 255, 0) 72.6%),
     url('../images/main.png');
   background-repeat: no-repeat;
   background-position: center top;
-  /* background-size: cover; */
-}
 
-.hero-container {
-  padding: 120px 0px;
-}
+  &__content {
+    margin-left: 106px;
+    padding: 120px 0px;
+  }
 
-.hero-content {
-  margin-left: 106px;
-}
+  &__pretitle {
+    padding: 16px 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
 
-.hero-button-block {
-  max-width: 238px;
-  height: 103px;
-}
+  &__title {
+    width: 100%;
+    max-width: 529px;
+    margin-bottom: 40px;
+    color: var(--color-primary-blue);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.8;
+    text-transform: capitalize;
+  }
 
-.hero-title {
-  width: 100%;
-  max-width: 529px;
-  margin-bottom: 40px;
-  color: var(--color-primary-blue);
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
-  font-size: 140px;
-  line-height: 0.8;
-  text-transform: capitalize;
-}
-
-.hero-activity {
-  padding: 16px 0px;
-  margin-bottom: 0px;
-  font-size: 18px;
+  &__description {
+    padding: 14px 0 0;
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 238px;
+  }
 }
