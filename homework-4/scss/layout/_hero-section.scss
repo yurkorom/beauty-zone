@@ -8,6 +8,17 @@
   background-repeat: no-repeat;
   background-position: center top;
 
+  @media screen and (min-device-pixel-retio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(94deg,
+        rgba(255, 255, 255, 1) 30.5%,
+        rgba(255, 255, 255, 0.85) 41.2%,
+        rgba(255, 255, 255, 0.19) 58.5%,
+        rgba(255, 255, 255, 0) 72.6%),
+      url('../images/main@2x.png');
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
