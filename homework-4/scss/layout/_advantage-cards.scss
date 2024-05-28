@@ -1,10 +1,19 @@
 .advantage-card {
     display: flex;
-    flex-direction: row;
-    gap: 56px;
+    flex-direction: column;
+    gap: 16px;
     margin: 0;
     padding: 0;
-    max-width: 1060px;
+    max-width: 316px;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        flex-direction: row;
+        gap: 56px;
+        margin: 0;
+        padding: 0;
+        max-width: 1060px;
+    }
 
     &__item {
         padding: 24px;

@@ -4,30 +4,45 @@
     animation-iteration-count: infinite;
 
     &--l {
-        top: 323px;
-        right: 250px;
-        fill: var(--color-secondary-dark);
-        animation-name: shine-star-l;
-        animation-duration: 3s;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            top: 323px;
+            right: 250px;
+            fill: var(--color-secondary-dark);
+            animation-name: shine-star-l;
+            animation-duration: 3s;
+        }
     }
 
     &--m {
-        top: 19px;
-        right: -41px;
-        transform: rotate(60deg);
-        fill: var(--color-primary-blue);
-        animation-name: shine-star-m;
-        animation-delay: 1.25s;
-        animation-duration: 3s;
+        right: 20px;
+        bottom: -46px;
+        transform: rotate(90deg);
+        fill: var(--color-secondary-dark);
+
+        @media screen and (min-width: $bp-desktop) {
+            top: 19px;
+            right: -41px;
+            transform: rotate(60deg);
+            fill: var(--color-primary-blue);
+            animation-name: shine-star-m;
+            animation-delay: 1.25s;
+            animation-duration: 3s;
+        }
     }
 
     &--s {
-        top: 257px;
-        right: -42px;
-        transform: rotate(7deg);
-        fill: var(--color-secondary-light);
-        animation-name: shine-star-s;
-        animation-delay: 2.5s;
-        animation-duration: 3s;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            top: 257px;
+            right: -42px;
+            transform: rotate(7deg);
+            fill: var(--color-secondary-light);
+            animation-name: shine-star-s;
+            animation-delay: 2.5s;
+            animation-duration: 3s;
+        }
     }
 }

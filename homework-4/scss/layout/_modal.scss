@@ -51,13 +51,34 @@
   }
 
   &__btn-close {
+    width: 16px;
+    height: 16px;
     position: absolute;
     top: 42px;
     right: 42px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: var(--color-primary-light);
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
   }
 
   &__form-button {
-    display: block;
     margin: 0 auto 8px;
   }
 }

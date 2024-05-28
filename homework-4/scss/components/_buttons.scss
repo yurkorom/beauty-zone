@@ -1,14 +1,21 @@
 .button {
-  padding: 16px 32px;
+  display: block;
+  padding: 13px 24px;
   color: var(--color-primary-light);
   background: var(--color-primary-blue);
   border: 2px solid var(--color-primary-blue);
   border-radius: 32px;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 16px;
   transition: color 0.2s, background-color 0.2s;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 32px;
+    font-weight: 700;
+    font-size: 18px;
+  }
 
   &:hover {
     color: var(--color-primary-dark);

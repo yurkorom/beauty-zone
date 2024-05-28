@@ -1,24 +1,23 @@
 .footer {
+  position: relative;
   padding: 56px 0px;
-  height: 278px;
   color: var(--color-primary-light);
   background-image: url('../images/background-footer.png');
   background-color: var(--color-primary-dark);
 
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 155px;
+    content: '';
+    background-image: url('../images/vials.png');
+  }
+
   &__container {
-    position: relative;
     display: flex;
     gap: 20px;
-
-    &::after {
-      position: absolute;
-      top: 67px;
-      right: 5px;
-      width: 250px;
-      height: 155px;
-      content: '';
-      background-image: url('../images/vials.png');
-    }
   }
 
   &__nav,
@@ -35,12 +34,21 @@
     flex-grow: 1;
   }
 
+  &__menu-list {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__social {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 24px;
+    padding-top: 16px;
   }
 
   &__icon {

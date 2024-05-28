@@ -3,13 +3,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
+
+  @media screen and (min-width: $bp-desktop) {
+    backdrop-filter: blur(10px);
+  }
 
   &__container {
     display: flex;
     align-items: center;
     gap: 40px;
-    height: 106px;
+    padding: 32px
   }
 
   &__nav {
@@ -20,15 +23,24 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 16px 56px;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__social {
-    display: flex;
-    gap: 32px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
   }
 
   &__icon {
@@ -37,6 +49,19 @@
 
     &:hover {
       fill: var(--color-primary-blue);
+    }
+  }
+
+  &__burger {
+    width: 24px;
+    height: 24px;
+    border: none;
+    padding: 0;
+    fill: var(--color-primary-light);
+    background-color: transparent;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
     }
   }
 }

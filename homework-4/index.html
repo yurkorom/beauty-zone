@@ -42,6 +42,11 @@
             </a>
           </address>
         </nav>
+        <button class="header__burger menu-btn-open" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -83,64 +88,66 @@
             <img class="about-us-section__image--a" src="./images/face-1.jpg" alt="жінка зі стрілкою на щоці" />
             <img class="about-us-section__image--b" src="./images/face-2.jpg" alt="жінка зі стрилкою на шії" />
           </div>
-          <svg class="star star--l" width="64" height="64">
-            <use href="./images/icons.svg#icon-star"></use>
-          </svg>
-          <svg class="star star--m" width="40" height="40">
-            <use href="./images/icons.svg#icon-star"></use>
-          </svg>
-          <svg class="star star--s" width="16" height="16">
-            <use href="./images/icons.svg#icon-star"></use>
-          </svg>
+          <div class="about-us-section__stars">
+            <svg class="star star--l" width="64" height="64">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg class="star star--m" width="40" height="40">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+            <svg class="star star--s" width="16" height="16">
+              <use href="./images/icons.svg#icon-star"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
-    <div class="background">
-      <section class="advantages-section" id="advantages-section">
-        <div class="container">
-          <div class="advantages-section__container">
-            <h2 class="section__title">
-              Чому люди <span class="text-brand"><br />обирають нас</span>
-            </h2>
-            <ul class="advantage-card">
-              <li>
-                <div class="advantage-card__item">
-                  <svg class="advantage-card__icons" width="48" height="48">
-                    <use href="./images/icons.svg#icon-materials"></use>
-                  </svg>
-                  <p class="advantage-card__text">
-                    Всі наші косметологи мають вищу медичну освіту та стаж
-                    роботи від 5 років
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="advantage-card__item">
-                  <svg class="advantage-card__icons" width="48" height="48">
-                    <use href="./images/icons.svg#icon-cosmetics-bottle"></use>
-                  </svg>
-                  <p class="advantage-card__text">
-                    Використовуємо тільки професійне обладнання та косметику,
-                    перевірену часом
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="advantage-card__item">
-                  <svg class="advantage-card__icons" width="48" height="48">
-                    <use href="./images/icons.svg#icon-crown"></use>
-                  </svg>
-                  <p class="advantage-card__text">
-                    Наша мета - підкреслити переваги та приховати недоліки, а
-                    не переробити
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+    <!-- <div class="background"> -->
+    <section class="advantages-section" id="advantages-section">
+      <div class="container">
+        <div class="advantages-section__container">
+          <h2 class="section__title">
+            Чому люди <span class="text-brand"><br />обирають нас</span>
+          </h2>
+          <ul class="advantage-card">
+            <li>
+              <div class="advantage-card__item">
+                <svg class="advantage-card__icons" width="48" height="48">
+                  <use href="./images/icons.svg#icon-materials"></use>
+                </svg>
+                <p class="advantage-card__text">
+                  Всі наші косметологи мають вищу медичну освіту та стаж
+                  роботи від 5 років
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="advantage-card__item">
+                <svg class="advantage-card__icons" width="48" height="48">
+                  <use href="./images/icons.svg#icon-cosmetics-bottle"></use>
+                </svg>
+                <p class="advantage-card__text">
+                  Використовуємо тільки професійне обладнання та косметику,
+                  перевірену часом
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="advantage-card__item">
+                <svg class="advantage-card__icons" width="48" height="48">
+                  <use href="./images/icons.svg#icon-crown"></use>
+                </svg>
+                <p class="advantage-card__text">
+                  Наша мета - підкреслити переваги та приховати недоліки, а
+                  не переробити
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section>
-      <section class="procedures-section section" id="procedures-section">
+      </div>
+    </section>
+    <!-- <section class="procedures-section section" id="procedures-section">
         <div class="container">
           <h2 class="section__title">
             Наші <span class="text-brand">процедури</span>
@@ -175,9 +182,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
-    <section class="contacts-section" id="contacts-section">
+    <!-- <section class="contacts-section" id="contacts-section">
       <div class="container">
         <h2 class="section__title">
           Як нас <span class="text-brand">знайти</span>
@@ -218,9 +225,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <nav class="footer__nav">
@@ -230,17 +237,17 @@
             </a>
           </div>
           <ul class="footer__menu">
-            <li>
+            <li class="footer__menu-list">
               <a class="footer-link" href="#about-us-section">Про нас</a>
             </li>
-            <li>
+            <li class="footer__menu-list">
               <a class="footer-link" href="#advantages-section">Чому ми</a>
             </li>
-            <li>
+            <li class="footer__menu-list">
               <a class="footer-link" href="#procedures-section">Наші процедури
               </a>
             </li>
-            <li>
+            <li class="footer__menu-list">
               <a class="footer-link" href="#contacts-section">Контакти</a>
             </li>
           </ul>
@@ -248,13 +255,13 @@
         <address class="footer__address">
           <div class="footer__contact">
             <ul>
-              <li>
+              <li class="footer__menu-list">
                 <a class="footer-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
               </li>
-              <li>
+              <li class="footer__menu-list">
                 <a class="footer-link" href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
               </li>
-              <li>
+              <li class="footer__menu-list">
                 <a class="footer-link" href="https://maps.app.goo.gl/9SvsVYdLeDnGmzAJ8" target="_blank">Україна, м.
                   Київ, <br />бул. Тараса Шевченка 5</a>
               </li>
@@ -285,10 +292,10 @@
           </div>
           <div class="footer__terms">
             <ul>
-              <li>
+              <li class="footer__menu-list">
                 <a class="footer-link" href="#" target="_blank">Політика конфіденційності</a>
               </li>
-              <li>
+              <li class="footer__menu-list">
                 <p class="footer__copyright">&copy; 2022 Дані захищені</p>
               </li>
             </ul>
@@ -296,7 +303,7 @@
         </address>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <div class="backdrop is-hidden">
     <div class="modal">
@@ -305,7 +312,7 @@
         Запишіться <span class="text-brand">безкоштовно</span> та отримайте
         подарунок
       </h3>
-      <button class="modal__btn-close modal-btn-close" type="button">close</button>
+      <button class="modal__btn-close modal-btn-close" type="button"></button>
       <form name="modal-form" autocomplete="off">
         <div class="modal__form-field input">
           <label class="input__label visualy-hidden" for="user-name">Ваше ім'я та прізвище</label>
@@ -333,7 +340,12 @@
     </div>
   </div>
 
+  <div class="mobile-menu">
+    <button class="mobile-menu__btn-close menu-btn-close" type="button"></button>
+  </div>
+
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
