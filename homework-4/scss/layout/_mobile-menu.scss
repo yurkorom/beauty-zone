@@ -39,4 +39,43 @@
             transform: translate(-50%, -50%) rotate(-45deg);
         }
     }
+
+    &__container {
+        padding: 16px 0 0 20px;
+    }
+
+    &__logo {
+        padding-bottom: 32px;
+    }
+
+    &__list {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: var(--color-primary-dark);
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--color-primary-blue);
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__icon {
+        fill: var(--color-primary-dark);
+        transition: fill 0.2s;
+
+        &:hover {
+            fill: var(--color-primary-blue);
+        }
+    }
 }

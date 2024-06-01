@@ -1,28 +1,50 @@
 .contacts-section {
-  padding: 48px 0 96px;
+  padding: 20px 0 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0 96px;
+  }
+
 
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column-reverse;
+    gap: 24px;
     justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__map {
-    width: 100%;
-    max-width: 605px;
-    height: 481px;
+    flex-shrink: 0;
+    height: 232px;
+    margin: 0 -24px;
     border: none;
-    border-radius: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      max-width: 605px;
+      height: 481px;
+      border: none;
+      border-radius: 32px;
+    }
   }
 
   &__form {
-    padding: 48px 56px;
+    padding: 42px 24px;
     color: var(--color-primary-light);
     background-color: var(--color-primary-dark);
     border-radius: 32px;
     width: 100%;
     max-width: 420px;
     height: 481px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 48px 56px;
+    }
   }
 
   &__form-title {

@@ -13,9 +13,13 @@
 
 .footer-link {
   color: var(--color-primary-light);
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: color 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 16px;
+  }
 
   &:hover {
     color: var(--color-primary-blue);

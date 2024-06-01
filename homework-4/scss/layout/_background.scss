@@ -3,4 +3,10 @@
     background-repeat: no-repeat;
     background-position: center top;
     width: 100%;
+
+    @media screen and (min-device-pixel-retio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/background-section@2x.jpg');
+    }
 }

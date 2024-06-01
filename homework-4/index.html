@@ -104,89 +104,109 @@
         </div>
       </div>
     </section>
-    <!-- <div class="background"> -->
-    <section class="advantages-section" id="advantages-section">
-      <div class="container">
-        <div class="advantages-section__container">
-          <h2 class="section__title">
-            Чому люди <span class="text-brand"><br />обирають нас</span>
-          </h2>
-          <ul class="advantage-card">
-            <li>
-              <div class="advantage-card__item">
-                <svg class="advantage-card__icons" width="48" height="48">
-                  <use href="./images/icons.svg#icon-materials"></use>
-                </svg>
-                <p class="advantage-card__text">
-                  Всі наші косметологи мають вищу медичну освіту та стаж
-                  роботи від 5 років
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="advantage-card__item">
-                <svg class="advantage-card__icons" width="48" height="48">
-                  <use href="./images/icons.svg#icon-cosmetics-bottle"></use>
-                </svg>
-                <p class="advantage-card__text">
-                  Використовуємо тільки професійне обладнання та косметику,
-                  перевірену часом
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="advantage-card__item">
-                <svg class="advantage-card__icons" width="48" height="48">
-                  <use href="./images/icons.svg#icon-crown"></use>
-                </svg>
-                <p class="advantage-card__text">
-                  Наша мета - підкреслити переваги та приховати недоліки, а
-                  не переробити
-                </p>
-              </div>
-            </li>
-          </ul>
+    <div class="background">
+      <section class="advantages-section" id="advantages-section">
+        <div class="container">
+          <div class="advantages-section__container">
+            <h2 class="section__title">
+              Чому люди <span class="text-brand"><br />обирають нас</span>
+            </h2>
+            <ul class="advantage-card">
+              <li>
+                <div class="advantage-card__item">
+                  <svg class="advantage-card__icons" width="48" height="48">
+                    <use href="./images/icons.svg#icon-materials"></use>
+                  </svg>
+                  <p class="advantage-card__text">
+                    Всі наші косметологи мають вищу медичну освіту та стаж
+                    роботи від 5 років
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="advantage-card__item">
+                  <svg class="advantage-card__icons" width="48" height="48">
+                    <use href="./images/icons.svg#icon-cosmetics-bottle"></use>
+                  </svg>
+                  <p class="advantage-card__text">
+                    Використовуємо тільки професійне обладнання та косметику,
+                    перевірену часом
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="advantage-card__item">
+                  <svg class="advantage-card__icons" width="48" height="48">
+                    <use href="./images/icons.svg#icon-crown"></use>
+                  </svg>
+                  <p class="advantage-card__text">
+                    Наша мета - підкреслити переваги та приховати недоліки, а
+                    не переробити
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- <section class="procedures-section section" id="procedures-section">
+      </section>
+      <section class="procedures-section section" id="procedures-section">
         <div class="container">
           <h2 class="section__title">
             Наші <span class="text-brand">процедури</span>
           </h2>
-          <div class="procedures-section__container">
-            <button class="carusel-button" type="button">
+          <div class="procedures-section__slider">
+            <button class="carusel-button procedures-section__button prev" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="procedures-section__list">
-              <li class="procedures-section__item">
-                <article class="procedure-card procedure-card--masks">
-                  <h3 class="procedure-card__title">Маски для обличчя</h3>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedure-card procedure-card--injection">
-                  <h3 class="procedure-card__title">Ін'єкції для обличчя</h3>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedure-card procedure-card--cleansing">
-                  <h3 class="procedure-card__title">Очищення обличчя</h3>
-                </article>
-              </li>
-            </ul>
-            <button class="carusel-button carusel-button--next" type="button">
+            <div class="procedures-section__container swiper-container">
+              <ul class="procedures-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--masks">
+                    <h3 class="procedure-card__title">Маски для обличчя</h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--injection">
+                    <h3 class="procedure-card__title">Ін'єкції для обличчя</h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--cleansing">
+                    <h3 class="procedure-card__title">Очищення обличчя</h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--masks">
+                    <h3 class="procedure-card__title">Маски для обличчя</h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--injection">
+                    <h3 class="procedure-card__title">Ін'єкції для обличчя</h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedure-card procedure-card--cleansing">
+                    <h3 class="procedure-card__title">Очищення обличчя</h3>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button class="carusel-button procedures-section__button carusel-button--next next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
     </div>
-    <!-- <section class="contacts-section" id="contacts-section">
+    <section class="contacts-section" id="contacts-section">
       <div class="container">
         <h2 class="section__title">
           Як нас <span class="text-brand">знайти</span>
@@ -227,9 +247,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <nav class="footer__nav">
@@ -254,9 +274,9 @@
             </li>
           </ul>
         </nav>
-        <address class="footer__address">
+        <address class="footer__address-block">
           <div class="footer__contact">
-            <ul>
+            <ul class="footer__address">
               <li class="footer__menu-list">
                 <a class="footer-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
               </li>
@@ -291,6 +311,7 @@
                 </a>
               </li>
             </ul>
+            <p class="footer__copyright-mobile">&copy; 2022 Дані захищені</p>
           </div>
           <div class="footer__terms">
             <ul>
@@ -305,7 +326,7 @@
         </address>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <div class="backdrop is-hidden">
     <div class="modal">
@@ -344,10 +365,44 @@
 
   <div class="mobile-menu">
     <button class="mobile-menu__btn-close menu-btn-close" type="button"></button>
+    <div class="mobile-menu__container">
+      <a class="mobile-menu__logo" href="/">
+        <img src="./images/logo.svg" alt="логотип Beauty Zone" />
+      </a>
+      <ul class="mobile-menu__list">
+        <li><a class="mobile-menu__link" href="#about-us-section">Про нас</a></li>
+        <li><a class="mobile-menu__link" href="#advantages-section">Чому ми</a></li>
+        <li>
+          <a class="mobile-menu__link" href="#procedures-section">Наші процедури</a>
+        </li>
+        <li><a class="mobile-menu__link" href="#contacts-section">Контакти</a></li>
+      </ul>
+      <address class="mobile-menu__social">
+        <a href="tel:+380960000007">
+          <svg class="mobile-menu__icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-telephone"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="mobile-menu__icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="mobile-menu__icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </address>
+    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
+  <script src="./js/format-slider.js"></script>
 </body>
 
 </html>
