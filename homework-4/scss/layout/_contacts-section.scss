@@ -42,14 +42,17 @@
     width: 100%;
     max-width: 420px;
     height: 481px;
+    margin: 0 auto;
 
     @media screen and (min-width: $bp-tablet) {
       padding: 48px 56px;
+      margin: 0;
     }
   }
 
   &__form-title {
-    margin-bottom: 32px;
+    padding-bottom: 32px;
+    margin: 0 auto;
     font-weight: 600;
     font-size: 22px;
     width: 280px;

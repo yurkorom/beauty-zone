@@ -5,14 +5,11 @@
     justify-content: end;
     align-items: center;
     height: 456px;
-    width: 320px;
     border-radius: 4px 120px;
 
-    @media screen and (min-width: $bp-tablet) {
-        width: 344px;
-    }
-
     &--masks {
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: linear-gradient(180deg,
                 rgba(1, 28, 68, 0) 47.4%,
                 rgba(1, 28, 68, 0.73) 82.66%,
@@ -31,6 +28,8 @@
     }
 
     &--injection {
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: linear-gradient(180deg,
                 rgba(1, 28, 68, 0) 47.4%,
                 rgba(1, 28, 68, 0.73) 82.66%,
@@ -49,6 +48,8 @@
     }
 
     &--cleansing {
+        background-repeat: no-repeat;
+        background-size: cover;
         background-image: linear-gradient(180deg,
                 rgba(1, 28, 68, 0) 47.4%,
                 rgba(1, 28, 68, 0.73) 82.66%,
