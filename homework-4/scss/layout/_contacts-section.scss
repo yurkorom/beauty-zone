@@ -19,7 +19,6 @@
   }
 
   &__map {
-    flex-shrink: 0;
     height: 232px;
     margin: 0 -24px;
     border: none;
@@ -38,11 +37,18 @@
     padding: 42px 24px;
     color: var(--color-primary-light);
     background-color: var(--color-primary-dark);
+    background-image: url('../images/background-form.png');
     border-radius: 32px;
     width: 100%;
     max-width: 420px;
     height: 481px;
     margin: 0 auto;
+
+    @media screen and (min-device-pixel-retio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/background-form.png@2x.png');
+    }
 
     @media screen and (min-width: $bp-tablet) {
       padding: 48px 56px;

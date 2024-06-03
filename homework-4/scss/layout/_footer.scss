@@ -2,13 +2,23 @@
   position: relative;
   padding: 32px 0 66px;
   color: var(--color-primary-light);
-  background-image: url('../images/background-footer.png');
   background-color: var(--color-primary-dark);
+  background-image: url('../images/background-footermob.png');
 
   @media screen and (min-device-pixel-retio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url('../images/background-footer@2x.png');
+    background-image: url('../images/background-footermob@2x.png');
+  }
+
+  @media screen and (min-width: $bp-mobile) {
+    background-image: url('../images/background-footer.png');
+
+    @media screen and (min-device-pixel-retio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../images/background-footer@2x.png');
+    }
   }
 
   @media screen and (min-width: $bp-tablet) {

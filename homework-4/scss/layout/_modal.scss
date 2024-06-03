@@ -27,8 +27,15 @@
   padding: 22px 48px;
   color: var(--color-primary-light);
   background-color: var(--color-primary-dark);
+  background-image: url('../images/background-modal.png');
   border-radius: 48px;
   overflow-y: auto;
+
+  @media screen and (min-device-pixel-retio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/background-modal@2x.png');
+  }
 
   @media screen and (min-width: $bp-tablet) {
     padding: 42px 144px;
