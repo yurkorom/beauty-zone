@@ -68,17 +68,17 @@
       grid-template-rows: 328px 328px;
       gap: 40px 0px;
     }
+  }
 
-    &--a {
-      grid-column-start: 1;
-      grid-row-start: 1;
-      border-radius: 163px;
-    }
+  &__image-a {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border-radius: 163px;
+  }
 
-    &--b {
-      grid-column-start: 2;
-      grid-row-start: 2;
-      border-radius: 163px;
-    }
+  &__image-b {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 163px;
   }
 }

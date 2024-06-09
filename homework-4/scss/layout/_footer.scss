@@ -29,6 +29,7 @@
     display: none;
 
     @media screen and (min-width: $bp-tablet) {
+      display: block;
       position: absolute;
       right: 0;
       bottom: 0;

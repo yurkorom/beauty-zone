@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
 
-  @media screen and (min-width: $bp-desktop) {
+  @media screen and (min-width: $bp-tablet) {
     backdrop-filter: blur(10px);
   }
 
@@ -25,7 +25,7 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
       gap: 16px 56px;
       flex-grow: 1;
@@ -37,7 +37,7 @@
   &__social {
     display: none;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: flex;
       gap: 32px;
     }
@@ -60,7 +60,7 @@
     fill: var(--color-primary-light);
     background-color: transparent;
 
-    @media screen and (min-width: $bp-desktop) {
+    @media screen and (min-width: $bp-tablet) {
       display: none;
     }
   }

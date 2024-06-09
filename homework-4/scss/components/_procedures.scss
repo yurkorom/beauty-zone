@@ -6,6 +6,9 @@
     align-items: center;
     height: 456px;
     border-radius: 4px 120px;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
 
     &--masks {
         background-repeat: no-repeat;
