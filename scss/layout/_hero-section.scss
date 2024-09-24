@@ -1,0 +1,108 @@
+.hero-section {
+  background-image: linear-gradient(38deg, #fff 0%,
+      rgba(255, 255, 255, 0.78) 31.23%,
+      rgba(255, 255, 255, 0.2) 50.39%,
+      rgba(255, 255, 255, 0) 68.37%),
+    url('../images/mainmob.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-retio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(38deg, #fff 0%,
+        rgba(255, 255, 255, 0.78) 31.23%,
+        rgba(255, 255, 255, 0.2) 50.39%,
+        rgba(255, 255, 255, 0) 68.37%),
+      url('../images/mainmob@2x.png');
+  }
+
+  @media screen and (min-width: $bp-mobile) {
+    background-image: linear-gradient(94deg,
+        rgba(255, 255, 255, 1) 30.5%,
+        rgba(255, 255, 255, 0.85) 41.2%,
+        rgba(255, 255, 255, 0.19) 58.5%,
+        rgba(255, 255, 255, 0) 72.6%),
+      url('../images/main.png');
+
+    @media screen and (min-device-pixel-retio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(94deg,
+          rgba(255, 255, 255, 1) 30.5%,
+          rgba(255, 255, 255, 0.85) 41.2%,
+          rgba(255, 255, 255, 0.19) 58.5%,
+          rgba(255, 255, 255, 0) 72.6%),
+        url('../images/main@2x.png');
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 71px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      margin-left: 106px;
+      padding: 126px 0;
+    }
+  }
+
+  &__pretitle {
+    padding: 16px 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 0px;
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    color: var(--color-primary-blue);
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 0.85;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      max-width: 529px;
+      margin-bottom: 40px;
+      color: var(--color-primary-blue);
+      font-family: 'Play', sans-serif;
+      font-weight: 700;
+      font-size: 140px;
+      line-height: 0.8;
+      text-transform: capitalize;
+    }
+
+  }
+
+  &__description {
+    padding: 8px 0 0;
+    margin: 0;
+    color: var(--color-secondary);
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 186px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 14px 0 0;
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: center;
+      max-width: 238px;
+    }
+  }
+}

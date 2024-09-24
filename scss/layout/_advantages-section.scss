@@ -1,0 +1,13 @@
+.advantages-section {
+  padding: 104px 0 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 176px 0 48px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
